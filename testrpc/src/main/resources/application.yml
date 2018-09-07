@@ -9,3 +9,8 @@ eureka:
 spring:
   application:
     name: test-feign
+
+#打开断路器
+feign:
+  hystrix:
+    enabled: true

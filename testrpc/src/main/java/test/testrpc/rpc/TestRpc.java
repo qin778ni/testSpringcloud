@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author:ms.y
  * @create 2018/9/6-15:37
  */
-@FeignClient(value="user")
+@FeignClient(value="user",fallback = TestRpcFallBack.class)
 public interface TestRpc {
     @RequestMapping(value="/user/login.do",method = RequestMethod.POST)
     String login(@RequestParam(value="id") String id);
