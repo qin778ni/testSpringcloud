@@ -15,7 +15,7 @@ public class TestClientController {
     String foo;
 
     @RequestMapping("config")
-    public String getConfig(){
+    public String config(){
         return foo;
     }
 }
