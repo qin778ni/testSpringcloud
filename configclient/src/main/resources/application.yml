@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-client
+  config:
+    label: master
+    profile: dev
+    uri: http://localhost:8765/
+
+server:
+  port: 8766

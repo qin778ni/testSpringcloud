@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/theLittleAnt/testSpringcloud.git
+          search-paths: config-files
+          username:
+          password:
+      label: master
+
+server:
+  port: 8765
+
+
+
